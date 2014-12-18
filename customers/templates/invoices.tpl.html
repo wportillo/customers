@@ -1,0 +1,94 @@
+<!-- BEGIN invoices -->
+<div class="content-box">
+	<div class="content-box-header">
+		<h3>{page_title}</h3>
+		<div class="clear"></div>
+	</div> 
+	
+	<div class="content-box-content">
+		<form method="post" name="sent_grid" id="sent_grid" autocomplete="off">
+			<input type="hidden" value="1" name="send_form">
+				<div class="tab-content default-tab" id="tab1">
+					{main_bar}
+					{notification_event}
+					<table id="pagination">
+						<thead>
+							<tr>
+								<td colspan="3">{cantidad_dropmenu}</td>
+								<td colspan="5">{pagination}</td>
+							</tr>
+						</thead>
+					</table>
+					
+					<table id="filters1">
+						<thead>
+							<tr>
+								<td>{i_reseller_dropmenu}</td>
+								<td>{payment_dropmenu}</td>
+							</tr>
+						</thead>
+					</table>
+					
+					<table id="filters3">
+						<thead>
+							<tr>
+								<td><label>Fecha de generación:</label></td>
+								<td>{generation_date_desde_calendar}</td>
+								<td>{generation_date_hasta_calendar}</td>
+								
+								<td><label>Fecha de pago:</label></td>
+								<td>{payment_date_desde_calendar}</td>
+								<td>{payment_date_hasta_calendar}</td>
+							</tr>
+						</thead>
+					</table>
+					
+					<table id="list">
+						<thead>
+							<tr>
+								<td colspan="5" align="right">	
+									<input class="button" type="button" value="Buscar"  onclick="javascript:document.sent_grid.submit();" style="float: right;"/>
+									<input class="button" type="button" value="Reset"  onclick="javascript:document.location.href='{new_search}';" style="float: right;"/>
+								</td>
+							</tr>
+						</thead>
+					</table>				
+					
+					<table id="grid">
+						<thead>
+							<tr>
+								{i_invoice_order_by}
+								{i_reseller_order_by}
+								{ammount_order_by}
+								{payment_order_by}
+								{generation_date_order_by}
+								{payment_date_order_by}
+							</tr>
+						</thead>
+					 	<tbody>
+							<!-- BEGIN list -->
+							<tr>
+								<td>{i_invoice}</td>
+								<td>{name_reseller}</td>
+								<td>{ammount}</td>
+								<td>{payment}</td>
+								<td>{generation_date}</td>
+								<td>{payment_date}</td>
+							</tr>
+							<!-- END list -->
+							
+							{combo_ajax}
+							
+							<!-- BEGIN norecords -->
+							<tr>
+								<td colspan="8">Esta busqueda no produjo resultados</td>
+							</tr>
+							<!-- END norecords -->
+						</tbody>
+					</table>
+				</div>
+				{pagination}
+			</form>
+		</div>
+	</div>
+<!-- END invoices -->

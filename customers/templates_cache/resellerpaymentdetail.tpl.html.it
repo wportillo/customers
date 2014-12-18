@@ -1,0 +1,80 @@
+a:4:{s:6:"blocks";a:4:{s:10:"__global__";s:27:"{__resellerpaymentdetail__}";s:21:"resellerpaymentdetail";s:1390:"<div class="content-box">
+<!-- Start Content Box -->
+<div class="content-box-header">
+<h3>{page_title}</h3>
+<div class="clear"></div>
+</div>
+<!-- End .content-box-header -->
+<div class="content-box-content">
+<form method="post" name="sent_grid" id="sent_grid" autocomplete="off">
+<input type="hidden" value="1" name="sent_form">
+<div class="tab-content default-tab" id="tab1"> <!-- This is the target div. id must match the href of this div's tab -->
+<!-- main Bar -->
+{main_bar}
+<!-- main Bar -->
+<!-- notification -->
+{notification_event}
+<!-- notification -->
+<table id="pagination">
+<thead>
+<tr>
+<td colspan="3">
+{quantity_dropmenu}
+</td>
+<td colspan="3">
+{pagination}
+</td>
+</tr>
+</thead>
+</table>
+<!-- Filters -->
+<table id="filters1">
+<thead>
+<tr>
+<td>
+{begin_calendar}
+</td>
+<td>
+{end_calendar}
+</td>
+<td>
+<input class="button" type="button" value="Buscar"  onclick="javascript:document.sent_grid.submit();"/>
+<input class="button" type="button" value="Reset"  onclick="javascript:document.location.href='resellerpaymentdetail/?action=reset&sent_form=1';"/>
+</td>
+</tr>
+</thead>
+</table>
+<table id="grid">
+<thead>
+<tr>
+{amount_order_by}
+{authcode_order_by}
+{type_order_by}
+{transdate_order_by}
+</tr>
+</thead>
+<tbody>
+{__list__}
+{__norecords__}
+</tbody>
+</table>
+</div> <!-- End #tab1 -->
+{pagination}
+</form>
+</div> <!-- End .content-box-content -->
+</div> <!-- End .content-box -->";s:4:"list";s:93:"<tr>
+<td>
+{amount}
+</td>
+<td>
+{authcode}
+</td>
+<td>
+{type}
+</td>
+<td>
+{transdate}
+</td>
+</tr>";s:9:"norecords";s:67:"<tr>
+<td colspan="4">Esta busqueda no produjo resultados</td>
+</tr>";}s:9:"variables";a:4:{s:10:"__global__";a:1:{s:25:"__resellerpaymentdetail__";b:1;}s:21:"resellerpaymentdetail";a:13:{s:10:"page_title";b:1;s:8:"main_bar";b:1;s:18:"notification_event";b:1;s:17:"quantity_dropmenu";b:1;s:10:"pagination";b:1;s:14:"begin_calendar";b:1;s:12:"end_calendar";b:1;s:15:"amount_order_by";b:1;s:17:"authcode_order_by";b:1;s:13:"type_order_by";b:1;s:18:"transdate_order_by";b:1;s:8:"__list__";b:1;s:13:"__norecords__";b:1;}s:4:"list";a:4:{s:6:"amount";b:1;s:8:"authcode";b:1;s:4:"type";b:1;s:9:"transdate";b:1;}s:9:"norecords";a:0:{}}s:8:"children";a:4:{s:10:"__global__";a:1:{s:21:"resellerpaymentdetail";b:1;}s:21:"resellerpaymentdetail";a:2:{s:4:"list";b:1;s:9:"norecords";b:1;}s:4:"list";a:0:{}s:9:"norecords";a:0:{}}s:9:"functions";a:4:{s:10:"__global__";a:0:{}s:21:"resellerpaymentdetail";a:0:{}s:4:"list";a:0:{}s:9:"norecords";a:0:{}}}

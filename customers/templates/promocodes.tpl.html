@@ -1,0 +1,56 @@
+<!-- BEGIN promocodes -->
+<div class="content-box">
+	<div class="content-box-header">
+		<h3>Manage promo codes</h3>
+		<div class="clear"></div>
+	</div> 
+	<div class="content-box-content">
+		<div class="tab-content default-tab" id="tab1">
+			<table id="grid">
+				<thead>
+					<tr>
+						
+						<th>Lote de consecutivos</th>
+						<th>Fecha</th>
+						<th>Asignado a</th>
+						<th>Usados</th>
+						<th colspan="3">
+							<table>
+								<thead>
+									<tr>
+										<th colspan="3" align="center">Pagados</th>
+									</tr>
+									<tr>
+										<th><b>TVMIA00041</b></th>
+										<th><b>TVMIA00200</b></th>
+										<th><b>TVMIA00500</b></th>
+									</tr>
+								</thead>
+							</table>
+						</th>
+						
+					</tr>
+				</thead>
+			 	<tbody>
+					<!-- BEGIN list -->
+					<tr>
+						<td><b>{batch}</b></td>
+						<td>{date}</td>
+						<td>{assign}</td>
+						<td>{used}</td>
+						<td>{plan41}</td>
+						<td>{plan200}</td>
+						<td>{plan500}</td>
+					</tr>
+					<!-- END list -->
+					<!-- BEGIN norecords -->
+					<tr>
+						<td colspan="8">Esta búsqueda no produjo resultados</td>
+					</tr>
+					<!-- END norecords -->
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<!-- END promocodes -->

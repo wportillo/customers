@@ -1,0 +1,105 @@
+a:4:{s:6:"blocks";a:5:{s:10:"__global__";s:20:"{__storeresellers__}";s:14:"storeresellers";s:1755:"<div class="content-box">
+<!-- Start Content Box -->
+<div class="content-box-header">
+<h3>{page_title}</h3>
+<div class="clear"></div>
+</div>
+<!-- End .content-box-header -->
+<div class="content-box-content">
+<form method="post" name="sent_grid" id="sent_grid" autocomplete="off">
+<input type="hidden" value="1" name="sent_form">
+<div class="tab-content default-tab" id="tab1"> <!-- This is the target div. id must match the href of this div's tab -->
+<!-- main Bar -->
+{main_bar}
+<!-- main Bar -->
+<!-- notification -->
+{notification_event}
+<!-- notification -->
+<table id="pagination">
+<thead>
+<tr>
+<td colspan="5">
+{pagination}
+</td>
+</tr>
+<tr>
+<td>
+{quantity_dropmenu}
+</td>
+<td>
+{trash_dropmenu}
+</td>
+<td>
+{name_input}
+</td>
+<td>
+{i_reseller_dropmenu}
+</td>
+<td>
+{i_store_dropmenu}
+</td>
+</tr>
+</thead>
+</table>
+<!-- Filters -->
+<table id="filters1">
+<thead>
+<tr>
+{__addstorereseller__}
+</tr>
+</thead>
+</table>
+<table id="filters4">
+<thead>
+<tr>
+<td colspan="7" align="right">
+<input class="button" type="button" value="Buscar"  onclick="javascript:document.sent_grid.submit();" style="float: right;"/>
+<input class="button" type="button" value="Reset"  onclick="javascript:document.location.href='storeresellers/?action=reset&sent_form=1';" style="float: right;"/>
+</td>
+</tr>
+</thead>
+</table>
+<!-- Filters -->
+<table id="grid">
+<thead>
+<tr>
+<th><input class="check-all" type="checkbox" name="checkbox" title=""/></th>
+{name_order_by}
+{address_order_by}
+{phone_order_by}
+{active_order_by}
+<th>Acciones</th>
+</tr>
+</thead>
+<tbody>
+{__list__}
+<!-- Ajax event -->
+{combo_ajax}
+<!-- Ajax event -->
+{__norecords__}
+</tbody>
+</table>
+</div> <!-- End #tab1 -->
+{pagination}
+</form>
+</div> <!-- End .content-box-content -->
+</div> <!-- End .content-box -->";s:16:"addstorereseller";s:134:"<td>
+<input class="button" type="button" value="Agregar Tienda"  onclick="javascript:document.location.href='/storereseller';"/>
+</td>";s:4:"list";s:291:"<tr>
+<td><input type="checkbox"  value="1" name="{i_store}" class="check"/></td>
+<td>{name}</td>
+<td>{address}</td>
+<td>{phone}</td>
+<td>{active_action_active}</td>
+<!-- actions -->
+<td>
+<!-- Icons -->
+{edit_edit}
+{restore_restore}
+{delete_delete}
+<!-- Icons -->
+</td>
+<!-- actions -->
+</tr>";s:9:"norecords";s:67:"<tr>
+<td colspan="7">Esta busqueda no produjo resultados</td>
+</tr>";}s:9:"variables";a:5:{s:10:"__global__";a:1:{s:18:"__storeresellers__";b:1;}s:14:"storeresellers";a:17:{s:10:"page_title";b:1;s:8:"main_bar";b:1;s:18:"notification_event";b:1;s:10:"pagination";b:1;s:17:"quantity_dropmenu";b:1;s:14:"trash_dropmenu";b:1;s:10:"name_input";b:1;s:19:"i_reseller_dropmenu";b:1;s:16:"i_store_dropmenu";b:1;s:20:"__addstorereseller__";b:1;s:13:"name_order_by";b:1;s:16:"address_order_by";b:1;s:14:"phone_order_by";b:1;s:15:"active_order_by";b:1;s:8:"__list__";b:1;s:10:"combo_ajax";b:1;s:13:"__norecords__";b:1;}s:16:"addstorereseller";a:0:{}s:4:"list";a:8:{s:7:"i_store";b:1;s:4:"name";b:1;s:7:"address";b:1;s:5:"phone";b:1;s:20:"active_action_active";b:1;s:9:"edit_edit";b:1;s:15:"restore_restore";b:1;s:13:"delete_delete";b:1;}s:9:"norecords";a:0:{}}s:8:"children";a:5:{s:10:"__global__";a:1:{s:14:"storeresellers";b:1;}s:14:"storeresellers";a:3:{s:16:"addstorereseller";b:1;s:4:"list";b:1;s:9:"norecords";b:1;}s:16:"addstorereseller";a:0:{}s:4:"list";a:0:{}s:9:"norecords";a:0:{}}s:9:"functions";a:5:{s:10:"__global__";a:0:{}s:14:"storeresellers";a:0:{}s:16:"addstorereseller";a:0:{}s:4:"list";a:0:{}s:9:"norecords";a:0:{}}}

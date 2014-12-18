@@ -1,0 +1,53 @@
+a:4:{s:6:"blocks";a:2:{s:10:"__global__";s:17:"{__makepayment__}";s:11:"makepayment";s:1357:"<style>
+#credit_info{
+display: none;
+}
+</style>
+<script>
+function showcredit(value){
+switch(value){
+case 'credit':
+$('#credit_info').show();
+break;
+default:
+$('#credit_info').hide();
+break;
+}
+}
+</script>
+<div class="content-box"><!-- Start Content Box -->
+<div class="content-box-header">
+<h3>{title}</h3>
+</div> <!-- End .content-box-header -->
+<div class="content-box-content">
+<div class="tab-content default-tab" id="tab2">
+<!-- main Bar -->
+{main_bar}
+<!-- main Bar -->
+<!-- notification -->
+{notification_event}
+<!-- notification -->
+<form method="post" name="sent" id="sent" autocomplete="off">
+<fieldset class="column"> <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
+<input type="hidden" name="sent_form" value="1" id="sent_form"/>
+{payment_method_dropmenu}
+<div style="{display_credit}" id="credit_info">
+{c_name_input}
+{c_surname_input}
+{number_input}
+{cvv_input}
+{month_dropmenu}
+{year_dropmenu}
+{c_address_input}
+{c_zip_input}
+</div>
+<p>
+<input class="button" type="button" value="Crear" onclick="document.sent.submit();">
+<input class="button" type="button" value="Cancelar"onclick="document.location.href='/customers/';">
+</p>
+</fieldset>
+<div class="clear"></div><!-- End .clear -->
+</form>
+</div> <!-- End #tab2 -->
+</div> <!-- End .content-box-content -->
+</div> <!-- End .content-box -->";}s:9:"variables";a:2:{s:10:"__global__";a:1:{s:15:"__makepayment__";b:1;}s:11:"makepayment";a:13:{s:5:"title";b:1;s:8:"main_bar";b:1;s:18:"notification_event";b:1;s:23:"payment_method_dropmenu";b:1;s:14:"display_credit";b:1;s:12:"c_name_input";b:1;s:15:"c_surname_input";b:1;s:12:"number_input";b:1;s:9:"cvv_input";b:1;s:14:"month_dropmenu";b:1;s:13:"year_dropmenu";b:1;s:15:"c_address_input";b:1;s:11:"c_zip_input";b:1;}}s:8:"children";a:2:{s:10:"__global__";a:1:{s:11:"makepayment";b:1;}s:11:"makepayment";a:0:{}}s:9:"functions";a:2:{s:10:"__global__";a:0:{}s:11:"makepayment";a:0:{}}}

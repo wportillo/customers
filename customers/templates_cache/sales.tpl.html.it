@@ -1,0 +1,63 @@
+a:4:{s:6:"blocks";a:2:{s:10:"__global__";s:11:"{__sales__}";s:5:"sales";s:1648:"<style>
+#credit_info{
+display: none;
+}
+</style>
+<script>
+function showcredit(value){
+switch(value){
+case 'credit':
+$('#credit_info').show();
+break;
+default:
+$('#credit_info').hide();
+break;
+}
+}
+</script>
+<div class="content-box"><!-- Start Content Box -->
+<div class="content-box-header">
+<h3>{title}</h3>
+</div> <!-- End .content-box-header -->
+<div class="content-box-content">
+<div class="tab-content default-tab" id="tab2">
+<!-- main Bar -->
+{main_bar}
+<!-- main Bar -->
+<!-- notification -->
+{notification_event}
+<!-- notification -->
+<form method="post" name="sent" id="sent" autocomplete="off">
+<fieldset class="column-left"> <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
+<input type="hidden" name="sent_form" value="1" id="sent_form"/>
+{name_input}
+{surname_input}
+{email_input}
+{email_repeat_input}
+{password_input}
+{password_repeat_input}
+{country_dropmenu}
+{areacode_input}
+{phone_input}
+<p>
+<input class="button" type="button" value="Crear" onclick="document.sent.submit();"/>
+<input class="button" type="button" value="Cancelar" onclick="document.location.href='/home/';"/>
+</p>
+</fieldset>
+<fieldset class="column-right"> <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
+{key_product_dropmenu}
+{payment_method_dropmenu}
+<div style="{display_credit}" id="credit_info">
+{month_dropmenu}
+{year_dropmenu}
+{c_address_input}
+{c_zip_input}
+{number_input}
+{cvv_input}
+</div>
+</fieldset>
+<div class="clear"></div><!-- End .clear -->
+</form>
+</div> <!-- End #tab2 -->
+</div> <!-- End .content-box-content -->
+</div> <!-- End .content-box -->";}s:9:"variables";a:2:{s:10:"__global__";a:1:{s:9:"__sales__";b:1;}s:5:"sales";a:21:{s:5:"title";b:1;s:8:"main_bar";b:1;s:18:"notification_event";b:1;s:10:"name_input";b:1;s:13:"surname_input";b:1;s:11:"email_input";b:1;s:18:"email_repeat_input";b:1;s:14:"password_input";b:1;s:21:"password_repeat_input";b:1;s:16:"country_dropmenu";b:1;s:14:"areacode_input";b:1;s:11:"phone_input";b:1;s:20:"key_product_dropmenu";b:1;s:23:"payment_method_dropmenu";b:1;s:14:"display_credit";b:1;s:14:"month_dropmenu";b:1;s:13:"year_dropmenu";b:1;s:15:"c_address_input";b:1;s:11:"c_zip_input";b:1;s:12:"number_input";b:1;s:9:"cvv_input";b:1;}}s:8:"children";a:2:{s:10:"__global__";a:1:{s:5:"sales";b:1;}s:5:"sales";a:0:{}}s:9:"functions";a:2:{s:10:"__global__";a:0:{}s:5:"sales";a:0:{}}}

@@ -1,0 +1,62 @@
+a:4:{s:6:"blocks";a:4:{s:10:"__global__";s:15:"{__accesslog__}";s:9:"accesslog";s:1110:"<div class="content-box">
+<!-- Start Content Box -->
+<div class="content-box-header">
+<h3>{page_title}</h3>
+<div class="clear"></div>
+</div>
+<!-- End .content-box-header -->
+<div class="content-box-content">
+<form method="post" name="sent_grid" id="sent_grid" autocomplete="off">
+<input type="hidden" value="1" name="sent_form">
+<div class="tab-content default-tab" id="tab1"> <!-- This is the target div. id must match the href of this div's tab -->
+<!-- main Bar -->
+{main_bar}
+<!-- main Bar -->
+<!-- notification -->
+{notification_event}
+<!-- notification -->
+<table id="pagination">
+<thead>
+<tr>
+<td>
+{quantity_dropmenu}
+</td>
+<td colspan="2">
+{pagination}
+</td>
+</tr>
+</thead>
+</table>
+<!-- Filters -->
+<table id="filters4">
+<thead>
+</thead>
+</table>
+<!-- Filters -->
+<table id="grid">
+<thead>
+<tr>
+{public_ip_order_by}
+{useragent_order_by}
+{last_access_order_by}
+</tr>
+</thead>
+<tbody>
+{__list__}
+<!-- Ajax event -->
+{combo_ajax}
+<!-- Ajax event -->
+{__norecords__}
+</tbody>
+</table>
+</div> <!-- End #tab1 -->
+{pagination}
+</form>
+</div> <!-- End .content-box-content -->
+</div> <!-- End .content-box -->";s:4:"list";s:68:"<tr>
+<td>{public_ip}</td>
+<td>{useragent}</td>
+<td>{date}</td>
+</tr>";s:9:"norecords";s:67:"<tr>
+<td colspan="8">Esta busqueda no produjo resultados</td>
+</tr>";}s:9:"variables";a:4:{s:10:"__global__";a:1:{s:13:"__accesslog__";b:1;}s:9:"accesslog";a:11:{s:10:"page_title";b:1;s:8:"main_bar";b:1;s:18:"notification_event";b:1;s:17:"quantity_dropmenu";b:1;s:10:"pagination";b:1;s:18:"public_ip_order_by";b:1;s:18:"useragent_order_by";b:1;s:20:"last_access_order_by";b:1;s:8:"__list__";b:1;s:10:"combo_ajax";b:1;s:13:"__norecords__";b:1;}s:4:"list";a:3:{s:9:"public_ip";b:1;s:9:"useragent";b:1;s:4:"date";b:1;}s:9:"norecords";a:0:{}}s:8:"children";a:4:{s:10:"__global__";a:1:{s:9:"accesslog";b:1;}s:9:"accesslog";a:2:{s:4:"list";b:1;s:9:"norecords";b:1;}s:4:"list";a:0:{}s:9:"norecords";a:0:{}}s:9:"functions";a:4:{s:10:"__global__";a:0:{}s:9:"accesslog";a:0:{}s:4:"list";a:0:{}s:9:"norecords";a:0:{}}}

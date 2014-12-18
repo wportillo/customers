@@ -1,0 +1,116 @@
+a:4:{s:6:"blocks";a:5:{s:10:"__global__";s:14:"{__contents__}";s:8:"contents";s:1863:"<div class="content-box">
+<!-- Start Content Box -->
+<div class="content-box-header">
+<h3>{page_title} </h3>
+<div class="clear"></div>
+</div>
+<!-- End .content-box-header -->
+<div class="content-box-content">
+<form method="post" name="sent_grid" id="sent_grid" autocomplete="off">
+<input type="hidden" value="1" name="send_form">
+<div class="tab-content default-tab" id="tab1"> <!-- This is the target div. id must match the href of this div's tab -->
+<!-- main Bar -->
+{main_bar}
+<!-- main Bar -->
+<!-- notification -->
+{notification_event}
+<!-- notification -->
+<table id="pagination">
+<thead>
+<tr>
+<td colspan="5">
+{pagination}
+</td>
+</tr>
+</thead>
+</table>
+<!-- Filters -->
+<table id="filters1">
+<thead>
+<tr>
+<td>
+{quantity_dropmenu}
+</td>
+<td>
+{i_category_dropmenu}
+</td>
+<td>
+{active_dropmenu}
+</td>
+<td>
+{name_input}
+</td>
+</tr>
+</thead>
+</table>
+<table id="filters3">
+<thead>
+<tr>
+<td>
+{papelera_dropmenu}
+</td>
+</tr>
+</thead>
+</table>
+<table id="filters1">
+<thead>
+<tr>
+{__addcontent__}
+</tr>
+</thead>
+</table>
+<table id="filters4">
+<thead>
+<tr>
+<td colspan="5" align="right">
+<input class="button" type="button" value="Buscar"  onclick="javascript:document.sent_grid.submit();" style="float: right;"/>
+<input class="button" type="button" value="Reset"  onclick="javascript:document.location.href='contents/?action=reset&sent_form=1';" style="float: right;"/>
+</td>
+</tr>
+</thead>
+</table>
+<table id="grid">
+<thead>
+<tr>
+<th><input class="check-all" type="checkbox"  name="checkbox" title=""/></th>
+{name_order_by}
+{i_category_order_by}
+{cdn_status_order_by}
+{status_order_by}
+{active_order_by}
+<th>Acciones</th>
+</tr>
+</thead>
+<tbody>
+{__list__}
+<!-- Ajax event -->
+{combo_ajax}
+<!-- Ajax event -->
+{__norecords__}
+</tbody>
+</table>
+</div> <!-- End #tab1 -->
+{pagination}
+</form>
+</div> <!-- End .content-box-content -->
+</div> <!-- End .content-box -->";s:10:"addcontent";s:127:"<td>
+<input class="button" type="button" value="Agregar Canal"  onclick="javascript:document.location.href='/content';"/>
+</td>";s:4:"list";s:453:"<tr>
+<td><input type="checkbox"  value="1" name="{i_channel}" class="check"/></td>
+<td>{name}</td>
+<td>{category_name}</td>
+<td>{cdn_status}</td>
+<td>{status_active}</td>
+<td>{active_action_active}</td>
+<!-- actions -->
+<td>
+<!-- Icons -->
+{edit_edit}
+{delete_delete}
+{restore_restore}
+<a class="fancybox fancybox.iframe" href="/preview/{i_channel}" title="Preview"><img src="/resources/icons/page_video.gif" border="0"></a>
+</td>
+<!-- actions -->
+</tr>";s:9:"norecords";s:67:"<tr>
+<td colspan="8">Esta busqueda no produjo resultados</td>
+</tr>";}s:9:"variables";a:5:{s:10:"__global__";a:1:{s:12:"__contents__";b:1;}s:8:"contents";a:18:{s:10:"page_title";b:1;s:8:"main_bar";b:1;s:18:"notification_event";b:1;s:10:"pagination";b:1;s:17:"quantity_dropmenu";b:1;s:19:"i_category_dropmenu";b:1;s:15:"active_dropmenu";b:1;s:10:"name_input";b:1;s:17:"papelera_dropmenu";b:1;s:14:"__addcontent__";b:1;s:13:"name_order_by";b:1;s:19:"i_category_order_by";b:1;s:19:"cdn_status_order_by";b:1;s:15:"status_order_by";b:1;s:15:"active_order_by";b:1;s:8:"__list__";b:1;s:10:"combo_ajax";b:1;s:13:"__norecords__";b:1;}s:10:"addcontent";a:0:{}s:4:"list";a:9:{s:9:"i_channel";b:1;s:4:"name";b:1;s:13:"category_name";b:1;s:10:"cdn_status";b:1;s:13:"status_active";b:1;s:20:"active_action_active";b:1;s:9:"edit_edit";b:1;s:13:"delete_delete";b:1;s:15:"restore_restore";b:1;}s:9:"norecords";a:0:{}}s:8:"children";a:5:{s:10:"__global__";a:1:{s:8:"contents";b:1;}s:8:"contents";a:3:{s:10:"addcontent";b:1;s:4:"list";b:1;s:9:"norecords";b:1;}s:10:"addcontent";a:0:{}s:4:"list";a:0:{}s:9:"norecords";a:0:{}}s:9:"functions";a:5:{s:10:"__global__";a:0:{}s:8:"contents";a:0:{}s:10:"addcontent";a:0:{}s:4:"list";a:0:{}s:9:"norecords";a:0:{}}}

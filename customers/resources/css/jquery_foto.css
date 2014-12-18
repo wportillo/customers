@@ -1,0 +1,104 @@
+/**
+ * This <div> element is wrapped by jCarousel around the list
+ * and has the classname "jcarousel-container".
+ */
+.jcarousel-container {
+    position: relative;
+}
+
+.jcarousel-clip {
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.jcarousel-list {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel-list li,
+.jcarousel-item {
+    float: left;
+    list-style: none;
+    /* We set the width/height explicitly. No width/height causes infinite loops. */
+    width: 120px;
+    height: 90px;
+	cursor: pointer;
+	margin-top: 12px;
+	border:1px solid #CCCCCC;
+}
+
+/**
+ * The buttons are added dynamically by jCarousel before
+ * the <ul> list (inside the <div> described above) and
+ * have the classnames "jcarousel-next" and "jcarousel-prev".
+ */
+.jcarousel-next {
+    z-index: 3;
+    display: none;
+}
+
+.jcarousel-prev {
+    z-index: 3;
+    display: none;
+}
+
+
+.jcarousel-container-horizontal {
+    width: 469px;
+}
+
+
+.jcarousel-clip-horizontal {
+    width:  450px;
+    height: 150px;
+}
+
+.jcarousel-item {
+    width: 120px;
+    height: 108px;
+}
+
+.jcarousel-item-horizontal {
+    margin-right: 10px;
+}
+
+.jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+#centro{
+height: 1331px !important;
+}
+#div_contenedor2 {
+height: 1366px !important;
+}
+.big_content{
+border:1px solid #CCCCCC; height: 450px; width: 600px; margin-bottom: 12px; margin-left: 50px; text-align: center;
+}
+#borde_der{
+height:1331px !important;
+}
+#borde_izq {
+height:1331px !important;
+}
+#fotos_carrusel { width:528px; height:120px; margin:auto; margin-bottom:15px;border:#CCC solid 1px;}
+#imagenes { width:450px; height:120px; float:left}
+.cajas_btn_gallery2 { width:30px; height:118px; float:right}
+.big_content {
+border:1px solid #CCCCCC;
+height:354px;
+margin-bottom:12px;
+margin-left:50px;
+text-align:center;
+width:475px;
+}
+.cajas_btn_gallery { width:30px; height:118px; float:left}

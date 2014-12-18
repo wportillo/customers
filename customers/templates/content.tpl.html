@@ -1,0 +1,65 @@
+<!-- BEGIN content -->
+<div class="content-box"><!-- Start Content Box -->
+			
+				<div class="content-box-header">
+					
+				<h3>{title}</h3>
+					
+				</div> <!-- End .content-box-header -->
+				
+				<div class="content-box-content">
+					
+				<div class="tab-content default-tab" id="tab2">
+					
+			
+				<!-- main Bar -->
+					{main_bar}
+				<!-- main Bar -->
+
+				<!-- notification -->
+					{notification_event}
+				<!-- notification -->
+			
+						<form method="post" name="sent" id="sent" autocomplete="off">
+							<fieldset class="column-left"> <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
+								<input type="hidden" name="sent_form" value="1" id="sent_form"/>	
+									{name_input}  	
+									{imagesite_upload}
+									{imagebox_upload}
+									{description_textarea}  	
+									{password_input}  		  		 	
+									{i_category_dropmenu}
+									{permissions_dropmenu}
+									{cdn_status_dropmenu}
+									{provider_player_dropmenu}
+									
+									
+							</fieldset>
+							<fieldset class="column-right"> <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
+									
+									{primary_hls_textarea}
+									{primary_rtmp_textarea}
+									{primary_rtsp_textarea}
+									{primary_player_textarea}
+									{secondary_hls_textarea}
+									{secondary_rtmp_textarea}
+									{secondary_rtsp_textarea}
+									{secondary_player_textarea}
+									{status_dropmenu}
+									{active_radio}
+								<p>
+									<input class="button" type="button" value="Guardar" onclick="document.sent.submit();"/>
+									<input class="button" type="button" value="Cancelar" onclick="document.location.href='/contents/';"/>
+								</p>
+								
+							</fieldset>
+							<div class="clear"></div><!-- End .clear -->
+							
+						</form>
+						
+					</div> <!-- End #tab2 -->        
+				
+				</div> <!-- End .content-box-content -->
+				
+			</div> <!-- End .content-box -->
+<!-- END content -->

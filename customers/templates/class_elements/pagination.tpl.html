@@ -1,0 +1,19 @@
+<!-- BEGIN pagination -->
+<div class="pagination">
+	<span class="text_pagination">
+	<!-- BEGIN previous -->
+		<a href="/{previous_direction}/{back}" title="Previous Page"><img src="/resources/images/izq_flecha.gif" border="0"/></a> Pagina: {page}
+	<!-- END previous -->
+	 
+	<!-- BEGIN following -->
+	 de {page} Paginas <a href="/{following_direction}/{next}" title="Next Page"><img src="/resources/images/der_flecha.gif" border="0"/></a>
+	<!-- END following -->
+	 </span>
+	 <!-- BEGIN records -->
+		 <span class="text_pagination"> Pagina: </span>
+	 	 <input name="go_to[]" class="text-input minim-input" style="width: 28px !important;"/>
+		 <input class="button" type="button" value="Ir a"  onclick="javascript:document.sent_grid.submit();" style="width: 32px !important;margin-left: 10px;"/>
+	 <!-- END records -->
+	  <span class="text_pagination" style="margin-left: 8px;">Cantidad Total: ({amount_results})</span>
+</div> 
+<!-- END pagination --> 

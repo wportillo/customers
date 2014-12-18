@@ -1,0 +1,160 @@
+<!-- BEGIN login -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<base href="{base}"/>
+		
+		<title> Admin Crm | Login </title>
+		
+		<!--   CSS   -->
+	   
+	    <link href="resources/images/favicon.ico" rel="shortcut icon" />
+	    
+		<!-- Reset Stylesheet -->
+		<link rel="stylesheet" href="resources/css/reset.css" type="text/css" media="screen" />
+	  
+		<!-- Main Stylesheet -->
+		<link rel="stylesheet" href="resources/css/style.css" type="text/css" media="screen" />
+		
+		<!-- Invalid Stylesheet. This makes stuff look pretty. Remove it if you want the CSS completely valid -->
+		<link rel="stylesheet" href="resources/css/invalid.css" type="text/css" media="screen" />
+		
+		<link rel="stylesheet" href="resources/css/themes/base/jquery.ui.all.css"/>	
+		
+		<link rel="stylesheet" type="text/css" href="/resources/scripts/htmlightbox/jquery.fancybox.css" media="screen" />
+	
+		<!-- Colour Schemes
+	  
+		Default colour scheme is green. Uncomment prefered stylesheet to use it.
+		
+		<link rel="stylesheet" href="resources/css/blue.css" type="text/css" media="screen" />
+		
+		<link rel="stylesheet" href="resources/css/red.css" type="text/css" media="screen" />  
+	 
+		-->
+		
+		<!-- Internet Explorer Fixes Stylesheet -->
+		
+		<!--[if lte IE 7]>
+			<link rel="stylesheet" href="resources/css/ie.css" type="text/css" media="screen" />
+		<![endif]-->
+		
+		<!--                       Javascripts                       -->
+	  
+		<!-- jQuery -->
+		<script type="text/javascript" src="resources/scripts/jquery-1.6.1.min.js"></script>
+		
+		<!-- jQuery Cookie -->
+		<script type="text/javascript" src="resources/scripts/jquery.cookie.js"></script>
+		 
+		
+		<!-- jQuery Configuration -->
+		<script type="text/javascript" src="resources/scripts/simpla.jquery.configuration.js"></script>
+		
+		<script type="text/javascript" src="resources/scripts/login.js"></script>
+		
+		<!-- jQuery Ui Configuration -->
+		
+		<script type="text/javascript" src="resources/scripts/external/jquery.bgiframe-2.1.2.js"></script>
+		
+		<script type="text/javascript" src="resources/scripts/ui/jquery.ui.core.js"></script>
+		
+		<script type="text/javascript" src="resources/scripts/ui/jquery.ui.widget.js"></script>
+		
+		<script type="text/javascript" src="resources/scripts/ui/jquery.ui.mouse.js"></script>
+		
+		<script type="text/javascript" src="resources/scripts/ui/jquery.ui.draggable.js"></script>
+		
+		<script type="text/javascript" src="resources/scripts/ui/jquery.ui.position.js"></script>
+		
+		<script type="text/javascript" src="resources/scripts/ui/jquery.ui.resizable.js"></script>
+		
+		<script src="resources/scripts/ui/jquery.ui.dialog.js"></script>
+		
+		<script type="text/javascript" src="/resources/scripts/jquery.mousewheel-3.0.6.pack.js"></script>
+		
+		<script type="text/javascript" src="/resources/scripts/jquery.fancybox.pack.js"></script>
+		
+		
+		<!-- Internet Explorer .png-fix -->
+		
+		<!--[if IE 6]>
+			<script type="text/javascript" src="resources/scripts/DD_belatedPNG_0.0.7a.js"></script>
+			<script type="text/javascript">
+				DD_belatedPNG.fix('.png_bg, img, li');
+			</script>
+		<![endif]-->
+		
+	</head>
+  
+	<body id="login">
+		<div id="dialog" title="Recuperar Usuario o contraseña" style="display: none;">
+					<p>
+						<label style="font-size:12px;">Ingrese su email:</label>
+						<input type="email" name="forget" class="text-input" id="forget"/>
+					
+					</p>
+					<span style="font-size:12px;">*Se enviara el usuario y contraseña por correo electronico</span>
+					
+		</div>
+		<div id="login-wrapper" class="png_bg">
+			<div id="login-top">
+				<span id="domain" style="display: none;">{domains}</span>
+				<h1>Click Admin</h1>
+				<!-- Logo (221px width) -->
+				<img id="logo" src="resources/images/logo.png" alt="" />
+			</div> <!-- End #logn-top -->
+				
+			<div id="login-content">
+				
+				<form  method="post" action="login" id="login_form" name="login_form">
+				
+				<input name="sent_form" type="hidden"  value="1"/>
+					
+				
+					<p>
+						<label>Usuario:</label>
+						<input class="text-input" type="text" name="usuario"/>
+					</p>
+					<div class="clear"></div>
+					<p>
+						<label>Contraseña:</label>
+						<input class="text-input" type="password" name="password"  onkeypress="iSubmitEnter(event,document.login_form);"/>
+					</p>
+					
+					<div class="clear"></div>
+						<!-- BEGIN error -->
+						
+						<div class="notification information png_bg">
+							<div>
+								{error}
+							</div>
+						</div>
+						
+						<!-- END error -->
+					<div class="clear"></div>	
+					<p id="remember-password" style="margin-bottom:10px;">
+						<span style="color:white;">No cerrar sesión:</span>
+						<input type="checkbox" value="1" name="persistent" id="persist_box" />
+					</p>
+					<div class="clear"></div>
+				
+					<p id="remember-password">
+						<a onclick="void(0);" class="icon-event">Olvide mi usuario!</a> | <a onclick="void(0);" class="icon-event" >Olvide mi contraseña!</a>
+					</p>
+					<div class="clear"></div>
+					<p>
+						<input class="button" type="submit" value="Entrar"/>
+					</p>
+					
+				</form>
+			</div> <!-- End #login-content -->
+			
+		</div> <!-- End #login-wrapper -->
+		
+  </body>
+  
+</html>
+<!-- END login -->

@@ -1,0 +1,204 @@
+<!-- BEGIN invoice -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+html,body {
+	width: 1000px;
+	font-size: 13px;
+}
+
+table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	line-height: 1.5em;
+}
+a:visited, a:hover, a:active, a:link{
+	text-decoration:none;
+	color:black;
+}
+
+#logo {
+	width: 45%;
+}
+
+#logo img {
+	width: 200px;;
+	height: auto;
+}
+
+#resumecontainer {
+	width: 55%;
+}
+
+#description {
+	font-size: 12px;
+	text-align: justify;
+}
+
+#tableheader {
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#tableheader td {
+	background-color: #EEEEEE; border-style : solid;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-bottom-width: 2px;
+	border-top-width: 2px;
+	border-color: #141414;
+	border-style: solid;
+}
+
+#footer {
+	font-size: 8px;
+	text-align: justify;
+}
+
+#resume {
+	background-color: silver;
+	margin-top: 35px;
+	width: 100%;
+	border-style: solid;
+	border-color: black;
+	border-width: 3px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+.title {
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-width: 2px;
+	border-color: #323232;
+	padding-right: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 8px;
+	width: 45%;
+}
+
+.value {
+	border-bottom-style: solid;
+	border-width: 1px;
+	border-color: #323232;
+	padding-right: 10px;
+	font-size: 14px;
+	text-align: left;
+	text-indent: 8px;
+}
+
+.centered {
+	text-align: center;
+}
+
+.cell {
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-color: #323232;
+	height:30px;
+}
+
+.leftcolumn {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-color: #323232;
+}
+</style>
+</head>
+<body>
+	<table style="margin-bottom:20px;">
+		<tr>
+			<td align="center" id="logo">
+				<img style="width:300px; height:100px"src="http://www.tvmia.com/images/tvmia_logo.png"></img>
+			</td>
+			<td id="resumecontainer">
+				<table id="resume">
+					<tbody>
+						<tr>
+							<td class="title">Invoice #</td>
+							<td class="value">{i_invoice}</td>
+						</tr>
+						<tr>
+							<td class="title">Reseller</td>
+							<td class="value">{nombre_reseller}</td>
+						</tr>
+						<tr>
+							<td class="title">Fecha de generación</td>
+							<td class="value">{generation_date}</td>
+						</tr>
+						<tr>
+							<td style="border-bottom-style: none;" class="title">Total</td>
+							<td style="border-bottom-style: none;" class="value">${totalammount}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td id="description" valign="top">
+				<p style="font-wieght:bold; margin:0px 0px 5px 0px; font-size:22px;">UNA NUEVA FORMA DE VER TELEVISIÓN</p>
+				<p style="font-size:28px; margin:0px 0px 5px 0px;"><a href="http://www.tvmia.com">WWW.TVMIA.COM</a></p>
+				<p style="font-size:20px; margin:0px 0px 5px 0px; color:#CC1030;">1 888 918 8642</p>
+			</td>
+			<td valign="bottom" style="text-align:right; font-size:15px;">
+				<br/>
+				Autorización: ____________________________________________________________<br/><br/>
+				Anotaciones:&nbsp; ____________________________________________________________<br/>
+				____________________________________________________________<br/>
+				____________________________________________________________<br/>
+				
+			</td>
+		</tr>
+	</table>
+	<table>
+		<!-- BEGIN table_page -->
+		<!-- BEGIN tableheader -->
+		<tr id="tableheader">
+			<td>Cantidad</td>
+			<td>ID</td>
+			<td>Contrato #</td>
+			<td>Detalle</td>
+			<td>Valor</td>
+			<td>Subtotal</td>
+		</tr>
+		<!-- END tableheader -->
+		<!-- BEGIN list -->
+		<tr>
+			<td style="width: 8%" class="centered cell leftcolumn">{quantity}</td>
+			<td style="width: 8%" class="centered cell">{id_telefonica}</td>
+			<td style="width: 10%" class="centered cell">{id}</td>
+			<td style="text-indent: 8px;" class="cell">{product} - {date}</td>
+			<td style="width: 8%" class="cell">${ammount}</td>
+			<td style="width: 8%" class="cell">${subtotal}</td>
+		</tr>
+		<!-- END list -->
+		<!-- BEGIN total -->
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td style="font-weight:bold; text-indent:5px; width: 8%; border-left-style:solid;border-bottom-style:solid;border-top-style:solid;">TOTAL</td>
+			<td style="width: 8%; border-right-style:solid;border-bottom-style:solid;border-top-style:solid;">${totalammount2}</td>
+		</tr>
+		<!-- END total -->
+		<!-- BEGIN pagination -->
+		<tr id="footer">
+			<td colspan="6">Página: {pagina}</td>
+		</tr>
+		<!-- END pagination -->
+		<!-- END table_page -->
+	</table>
+</body>
+</html>
+<!-- END invoice -->

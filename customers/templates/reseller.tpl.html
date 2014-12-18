@@ -1,0 +1,82 @@
+<!-- BEGIN reseller -->
+<style>
+#residual_info{
+  display: none;
+}
+</style>
+<script>
+function showresidual(value){
+	if(value!='0'){
+		
+		$('#residual_info').show();		
+		
+	}else{
+		$('#residual_info').hide();		
+		
+	}
+}
+</script>
+<div class="content-box"><!-- Start Content Box -->
+			
+				<div class="content-box-header">
+					
+				<h3>{title}</h3>
+					
+				</div> <!-- End .content-box-header -->
+				
+				<div class="content-box-content">
+					
+				<div class="tab-content default-tab" id="tab2">
+					
+			
+				<!-- main Bar -->
+					{main_bar}
+				<!-- main Bar -->
+
+				<!-- notification -->
+					{notification_event}
+				<!-- notification -->
+			
+						<form method="post" name="sent" id="sent" autocomplete="off">
+							
+							<fieldset class="column-left"> <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
+								<input type="hidden" name="sent_form" value="1" id="sent_form"/>	
+										{name_input}
+										{contact_input}
+										{email_input}
+										{phone_input}
+										{address_input}
+										{city_input}
+										{zipcode_input}
+							</fieldset>
+							<fieldset class="column-right"> <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
+								<input type="hidden" name="sent_form" value="1" id="sent_form"/>	
+										{hashtag_input}
+										{type_dropmenu}
+										{balance_input}
+										{commission_input}
+										{create_commission_input}
+										{residual_dropmenu}
+										
+										<div style="{display_residual}" id="residual_info">
+											{residual_commission_input}    
+										</div>
+										{active_radio}	 	
+							    <p>
+									<input class="button" type="button" value="Guardar" onclick="document.sent.submit();"/>
+									<input class="button" type="button" value="Cancelar" onclick="document.location.href='/resellers/';"/>
+								</p>
+								
+							</fieldset>
+							
+							
+							<div class="clear"></div><!-- End .clear -->
+							
+						</form>
+						
+					</div> <!-- End #tab2 -->        
+				
+				</div> <!-- End .content-box-content -->
+				
+			</div> <!-- End .content-box -->
+<!-- END reseller -->

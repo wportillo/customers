@@ -1,0 +1,29 @@
+a:4:{s:6:"blocks";a:2:{s:10:"__global__";s:9:"{__rol__}";s:3:"rol";s:1010:"<div class="content-box"><!-- Start Content Box -->
+<div class="content-box-header">
+<h3>{title}</h3>
+</div> <!-- End .content-box-header -->
+<div class="content-box-content">
+<div class="tab-content default-tab" id="tab2">
+<!-- main Bar -->
+{main_bar}
+<!-- main Bar -->
+<!-- notification -->
+{notification_event}
+<!-- notification -->
+<form method="post" name="sent" id="sent" autocomplete="off">
+<fieldset class="column"> <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
+<input type="hidden" name="sent_form" value="1" id="sent_form"/>
+{name_input}
+{grid_permission}
+{show_dropmenu}
+{active_radio}
+<p>
+<input class="button" type="button" value="Guardar" onclick="document.sent.submit();"/>
+<input class="button" type="button" value="Cancelar" onclick="document.location.href='/roles/';"/>
+</p>
+</fieldset>
+<div class="clear"></div><!-- End .clear -->
+</form>
+</div> <!-- End #tab2 -->
+</div> <!-- End .content-box-content -->
+</div> <!-- End .content-box -->";}s:9:"variables";a:2:{s:10:"__global__";a:1:{s:7:"__rol__";b:1;}s:3:"rol";a:7:{s:5:"title";b:1;s:8:"main_bar";b:1;s:18:"notification_event";b:1;s:10:"name_input";b:1;s:15:"grid_permission";b:1;s:13:"show_dropmenu";b:1;s:12:"active_radio";b:1;}}s:8:"children";a:2:{s:10:"__global__";a:1:{s:3:"rol";b:1;}s:3:"rol";a:0:{}}s:9:"functions";a:2:{s:10:"__global__";a:0:{}s:3:"rol";a:0:{}}}

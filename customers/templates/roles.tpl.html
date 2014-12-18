@@ -1,0 +1,120 @@
+<!-- BEGIN roles -->
+<div class="content-box">
+<!-- Start Content Box -->
+				
+				<div class="content-box-header">
+					
+				<h3>{page_title}</h3>
+					
+				<div class="clear"></div>
+				</div> 
+				<!-- End .content-box-header -->
+				
+				<div class="content-box-content">
+				
+				<form method="post" name="sent_grid" id="sent_grid" autocomplete="off">
+				
+				<input type="hidden" value="1" name="sent_form">
+				
+					<div class="tab-content default-tab" id="tab1"> <!-- This is the target div. id must match the href of this div's tab -->
+						
+								<!-- main Bar -->
+									{main_bar}
+								<!-- main Bar -->
+				
+								<!-- notification -->
+									{notification_event}
+								<!-- notification -->
+							   <table id="pagination">
+									<thead>
+										<tr>
+											<td colspan="5">
+												{pagination}
+										 	</td>
+										 </tr>
+											<tr>
+												<td>
+													{quantity_dropmenu}
+												</td>
+												<td>
+													{trash_dropmenu}
+												</td>	
+												<td>
+													{active_dropmenu}
+												</td>	
+												<td>
+													{name_input}
+												</td>	
+											</tr>
+										</thead>
+									</table>
+									<table id="filters1">
+											<thead>
+												<tr>
+													<!-- BEGIN addroll -->
+														<td>
+															<input class="button" type="button" value="Agregar Rol"  onclick="javascript:document.location.href='/rol';"/>
+														</td>
+													<!-- END addroll -->
+													
+												</tr>
+											</thead>
+									</table>
+								<!-- Filters -->
+									<table id="filters4">
+											<thead>
+												<tr>
+													<td colspan="5" align="right">	
+														<input class="button" type="button" value="Buscar"  onclick="javascript:document.sent_grid.submit();" style="float: right;"/>
+														<input class="button" type="button" value="Reset"  onclick="javascript:document.location.href='roles/?action=reset&sent_form=1';" style="float: right;"/>
+													</td>
+												</tr>
+											</thead>
+									</table>				
+								<!-- Filters -->
+							<table id="grid">
+								<thead>
+									<tr>
+									    <th><input class="check-all" type="checkbox"  name="checkbox" title=""/></th>
+									    {name_order_by}
+									    {active_order_by}
+									  	<th>Acciones</th>
+									</tr>
+							</thead>
+						 	<tbody>
+								<!-- BEGIN list -->
+										<tr>
+										    <td><input type="checkbox"  value="1" name="{rol_id}" class="check"/></td>
+											<td>{name}</td>
+											<td>{active_action_active}</td>
+											<!-- actions -->	
+											 <td>
+												<!-- Icons -->
+													  <a title="Usuarios Asignados al Rol" href="/users/?sent_form=1&i_roll={rol_id}" target="_blank"><img src="/resources/icons/page_user.gif" alt="users"></a>&nbsp;
+													  {edit_edit}&nbsp;
+													  {restore_restore}
+													  {delete_delete}&nbsp;
+												<!-- Icons -->
+											 </td>
+											<!-- actions -->
+									</tr>
+								<!-- END list -->
+								<!-- Ajax event -->
+									{combo_ajax}
+								<!-- Ajax event -->
+								<!-- BEGIN norecords -->
+									<tr>
+										<td colspan="8">Esta busqueda no produjo resultados</td>
+									</tr>
+								<!-- END norecords -->
+								</tbody>
+								
+						</table>
+						
+					</div> <!-- End #tab1 -->
+						{pagination}
+				</form>
+				</div> <!-- End .content-box-content -->
+				
+			</div> <!-- End .content-box -->
+<!-- END roles -->

@@ -1,0 +1,122 @@
+a:4:{s:6:"blocks";a:7:{s:10:"__global__";s:15:"{__customers__}";s:9:"customers";s:1916:"<div class="content-box">
+<!-- Start Content Box -->
+<div class="content-box-header">
+<h3>{page_title}</h3>
+<div class="clear"></div>
+</div>
+<!-- End .content-box-header -->
+<div class="content-box-content">
+<form method="post" name="sent_grid" id="sent_grid" autocomplete="off">
+<input type="hidden" value="1" name="sent_form">
+<div class="tab-content default-tab" id="tab1"> <!-- This is the target div. id must match the href of this div's tab -->
+<!-- main Bar -->
+{main_bar}
+<!-- main Bar -->
+<!-- notification -->
+{notification_event}
+<!-- notification -->
+<table id="pagination">
+<thead>
+<tr>
+<td>
+{quantity_dropmenu}
+</td>
+<td colspan="5">
+{pagination}
+</td>
+</tr>
+</thead>
+</table>
+<!-- Filters -->
+<table id="filters1">
+<thead>
+<tr>
+<td>
+{email_input}
+</td>
+<td>
+{i_customer_input}
+</td>
+<td>
+{active_dropmenu}
+</td>
+<td>
+{key_product_dropmenu}
+</td>
+<td>
+{trash_dropmenu}
+</td>
+<td>
+{begin_calendar}
+</td>
+<td>
+{end_calendar}
+</td>
+<td>
+{i_reseller_dropmenu}
+</td>
+</tr>
+</thead>
+</table>
+<table id="filters4">
+<thead>
+<tr>
+{__export_customers__}
+<td colspan="5" align="right">
+<input class="button" type="button" value="Buscar"  onclick="javascript:document.sent_grid.submit();" style="float: right;"/>
+<input class="button" type="button" value="Reset"  onclick="javascript:document.location.href='customers/?action=reset&sent_form=1';" style="float: right;"/>
+</td>
+</tr>
+</thead>
+</table>
+<table id="grid">
+<thead>
+<tr>
+<th><input class="check-all" type="checkbox"  name="checkbox" title=""/></th>
+{i_customer_order_by}
+{name_order_by}
+{email_order_by}
+{creation_date_order_by}
+{key_product_order_by}
+{last_payment_order_by}
+{active_order_by}
+<th>Acciones</th>
+</tr>
+</thead>
+<tbody>
+{__list__}
+<!-- Ajax event -->
+{combo_ajax}
+<!-- Ajax event -->
+{__norecords__}
+</tbody>
+</table>
+</div> <!-- End #tab1 -->
+{pagination}
+</form>
+</div> <!-- End .content-box-content -->
+</div> <!-- End .content-box -->";s:16:"export_customers";s:192:"<td>
+<span style="float: left; margin-top: 5px;">Extraer detalle: </span>
+<a href="/exportcustomers" target="_blank" style="float: left;"><img src="/resources/images/xls_file.png"/> </a>
+</td>";s:4:"list";s:386:"<tr>
+<td><input type="checkbox"  value="1" name="{i_customer}" class="check"/></td>
+<td>{i_customer}</td>
+<td>{name}</td>
+<td>{email}</td>
+<td>{creation_date}</td>
+<td>{key_product}</td>
+<td>{last_payment}</td>
+<td>{active_action_active}</td>
+<!-- actions -->
+<td>
+<!-- Icons -->
+{edit_edit}
+{delete_delete}
+{restore_restore}
+{__upgrade__}
+{__makepayment__}
+</td>
+<!-- actions -->
+</tr>";s:7:"upgrade";s:110:"<a  title="Upgrade" href="/upgrade/{i_customer}" ><img alt="Upgrade" src="/resources/images/upgrade.png"/></a>";s:11:"makepayment";s:120:"<a  title="Makepayment" href="/makepayment/{i_customer}" ><img alt="Makepayment" src="/resources/images/dolar.png"/></a>";s:9:"norecords";s:67:"<tr>
+<td colspan="8">Esta busqueda no produjo resultados</td>
+</tr>";}s:9:"variables";a:7:{s:10:"__global__";a:1:{s:13:"__customers__";b:1;}s:9:"customers";a:24:{s:10:"page_title";b:1;s:8:"main_bar";b:1;s:18:"notification_event";b:1;s:17:"quantity_dropmenu";b:1;s:10:"pagination";b:1;s:11:"email_input";b:1;s:16:"i_customer_input";b:1;s:15:"active_dropmenu";b:1;s:20:"key_product_dropmenu";b:1;s:14:"trash_dropmenu";b:1;s:14:"begin_calendar";b:1;s:12:"end_calendar";b:1;s:19:"i_reseller_dropmenu";b:1;s:20:"__export_customers__";b:1;s:19:"i_customer_order_by";b:1;s:13:"name_order_by";b:1;s:14:"email_order_by";b:1;s:22:"creation_date_order_by";b:1;s:20:"key_product_order_by";b:1;s:21:"last_payment_order_by";b:1;s:15:"active_order_by";b:1;s:8:"__list__";b:1;s:10:"combo_ajax";b:1;s:13:"__norecords__";b:1;}s:16:"export_customers";a:0:{}s:4:"list";a:12:{s:10:"i_customer";b:1;s:4:"name";b:1;s:5:"email";b:1;s:13:"creation_date";b:1;s:11:"key_product";b:1;s:12:"last_payment";b:1;s:20:"active_action_active";b:1;s:9:"edit_edit";b:1;s:13:"delete_delete";b:1;s:15:"restore_restore";b:1;s:11:"__upgrade__";b:1;s:15:"__makepayment__";b:1;}s:7:"upgrade";a:1:{s:10:"i_customer";b:1;}s:11:"makepayment";a:1:{s:10:"i_customer";b:1;}s:9:"norecords";a:0:{}}s:8:"children";a:7:{s:10:"__global__";a:1:{s:9:"customers";b:1;}s:9:"customers";a:3:{s:16:"export_customers";b:1;s:4:"list";b:1;s:9:"norecords";b:1;}s:16:"export_customers";a:0:{}s:4:"list";a:2:{s:7:"upgrade";b:1;s:11:"makepayment";b:1;}s:7:"upgrade";a:0:{}s:11:"makepayment";a:0:{}s:9:"norecords";a:0:{}}s:9:"functions";a:7:{s:10:"__global__";a:0:{}s:9:"customers";a:0:{}s:16:"export_customers";a:0:{}s:4:"list";a:0:{}s:7:"upgrade";a:0:{}s:11:"makepayment";a:0:{}s:9:"norecords";a:0:{}}}

@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{  background-color:#FFF; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#666666}
+#cabezal { width:1003px; height:141px; background-image:url(../imagenes/cabezal.jpg); background-repeat:no-repeat; margin:auto}
+#botonera1{ width:446px; height:22px; background-image:url(../imagenes/fdo_botonera.jpg); float:right; margin-top:90px; margin-right:40px; padding:5px 6px 0px 16px}
+
+a.links_cabezal:link, a.links_cabezal:visited {color:#fff; font-family:helvetica; font-size:13px; text-decoration:none; font-weight:bold;}
+a.links_cabezal:hover {color:#fff; font-family:helvetica; font-size:13px; text-decoration:underline; font-weight:bold;}
+.agregados { color:#fff; font-family:helvetica; font-size:13px; font-weight:bold; margin:0px 3px 0px 3px}
+
+/**********************************************************************************************************************************************************************/
+#fondo_general_secciones{ margin:auto; width:1003px; height:auto; background-image:url(../imagenes/fdo_general_seccion.jpg); background-repeat:repeat-y; display:table}
+#fondo_secciones{ margin:auto; width:1003px; height:auto; background-image:url(../imagenes/primera_parte_seccion.jpg); background-repeat:no-repeat; display:table}
+/***********************************************************************************************************************************************************************/
+
+#titulo_slider { width:962px; height:20px; background-color:#05367a; margin:auto; padding:4px 0px 0px 20px}
+#slider2 { width:932px; background-color:#ffffff; margin:auto; padding-left:45px; border-left:#e8e7e7 solid 1px}
+#logos { width:980px; margin:auto}
+#pie { width:962px; height:85px; margin:auto; background-color:#155880; color:#FFF; padding:10px; text-align:right}
+a.pie_links:link, a.pie_links:visited { text-decoration:none; color:#dfdddd}
+a.pie_links:hover { text-decoration:underline; color:#dfdddd}
+/*************************************************************************************************************************************************************************/
+
+#columna_izquierda { width:215px; height:auto; margin-left:17px; background-color:#fff; display:table; /*background-color:#033*/float:left; margin-top:3px}
+#columna_derecha { width:215px; /*height:auto;*/ margin-left:17px; background-color:#fff; display:table; /*background-color:#033*/ height:300px; background-color:#096; float:right}
+
+/****************************************************************************************************************************************************************************/
+
+#contenidos {float:right!important; width:745px; height:auto; display:table; margin-right:20px;}
+#fecha_buscador { width:745px; height:25px; background-color:#ffffff; border-bottom:#d4d4d4 solid 1px}
+#fecha { width:200px; height:17px; font-family:tahoma; font-size:12px; color:#666666; float:left; margin-top:6px}
+#buscador { width:190px; height:19px; font-family:tahoma; font-size:12px; color:#CCC; float:right; margin-top:2px}
+.campo_buscar { width:125px; height:17px; border:#d4d4d4 solid 1px; background-color:#f1f1f1; font-size:12px; color:#5a5959;}
+.contenedor_centrales{/*background-color:#000000;*/ height:auto; width:557px; display:table; float:left}
+/***********************************************************************************************************************************************************************/
+
+#central1 {width:555px; height:auto; float:left; margin-top:8px; background-color:#FFF; border-bottom:#dddddd solid 1px; display:table}
+#central1_titulo { width:555px; height:auto; background-color:#FFF; font-family: "Times New Roman", Times, serif; font-size:23px; color:#003366; font-weight:bold; word-wrap: break-word; display:table }
+a.central1:link, a.central1:visited { font-family: "Times New Roman", Times, serif; font-size:23px; color:#003366; font-weight:bold; text-decoration:none }
+a.central1:hover { font-family: "Times New Roman", Times, serif; font-size:23px; color:#2f66a2; font-weight:bold; text-decoration:none }
+#noticia1 {width:555px; height:auto; margin-top:3px; word-wrap: break-word; display:table; padding-bottom:5px}
+
+/*************************************************************************************************************************************************************************/
+
+#central2 {width:555px; height:auto; float:left; background-color:#FFF; border-bottom:#dddddd solid 1px; margin-top:5px; display:table }
+#caja_iz {width:172px; float:left; margin-right:8px; display:table}
+#caja_medio{width:172px; float:left; margin:0px 8px 0px 8px; display:table}
+#caja_der {width:172px; float:left; margin-left:8px; display:table}
+
+a.central2:link, a.central2:visited { font-family: "Times New Roman", Times, serif; font-size:14px; color:#003366; text-decoration:none }
+a.central2:hover { font-family: "Times New Roman", Times, serif; font-size:14px; color:#2f66a2; text-decoration:underline }
+.textos_cajas_internas {width:172px; word-wrap: break-word; margin-top:3px; margin-bottom:5px}
+
+/************************************************************************************************************************************************************************/
+
+#central3{width:555px; height:auto; float:left; background-color:#FFFFFF; border-bottom:#dddddd solid 1px; margin-top:5px; display:table; margin-bottom:5px; }
+#multimedia_gral {width:265px; height:auto; float:left; background-color:#FFFFFF; display:table}
+#multimedia { width:260px; height:auto; margin-bottom:3px; font-family:Arial, Helvetica, sans-serif; color:#003366; font-size:16px; font-weight:bold; display:table; padding-left:5px}
+#destacados_gral {width:285px; height:auto; float:right;  /*border-right:#dddddd solid 1px;*/ display:table; border-left:#dddddd solid 1px;}
+.destacados{width:275px!important; height:auto; float:right; border-bottom:#dddddd solid 1px; padding:5px 5px 5px 5px; word-wrap: break-word;}
+a.enlace_destacados:link, a.enlace_destacados:visited {font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#666666; text-decoration:none}
+a.enlace_destacados:hover {font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#666666; text-decoration:underline}
+
+/************************************************************************************************************************************************************************/
+/***************contenidos derecha (calendario, banners)***************************************************************************************************************/
+
+#contenedor_contenidos_derecha{width:185px; height:auto; float:right; display:table}
+
+
+
+/*******************calendario********************************************************************************************************************/
+#calendario {width:170px; min-height:220px; height:auto; float:right; background-color:#f4f4f4; margin:8px 7px 0px 0px; padding-bottom:5px}
+#titulo_calendario{ width:160px; height:28px; font-family:Helvetica; color:#9D0100; font-size:14px; font-weight:bold; background-color:#ebebeb; padding-top:12px; padding-left:10px}
+#mes_dato { width:155px; height:10px; font-family:Tahoma, Geneva, sans-serif; font-size:9px; font-weight:bold; color:#333; padding:5px 7px 5px 9px}
+.datos_calendario{ width:155px; height:28px; padding:3px 7px 3px 9px;}
+.grafico_fecha { width:34px; height:15px; background-image:url(../imagenes/base_calendario_grafico.jpg); font-family:Tahoma, Geneva, sans-serif; font-size:9px; color:#333; font-weight:bold; padding-top:14px; padding-left:0px; text-align:center; float:left}
+#textos_calendario_div{ width:120px; height:auto; float:right; word-wrap: break-word; padding-top:5px }
+a.links_calendario:link, a.links_calendario:visited{ font-family:Tahoma, Geneva, sans-serif; font-size:9px; color:#666666; font-weight:bold; text-decoration:none}
+a.links_calendario:hover{ font-family:Tahoma, Geneva, sans-serif; font-size:9px; color:#666666; font-weight:bold; text-decoration:underline}
+
+/*********************************************************************************************************************************************************************/
+
+/****************************slider banners contendeor derecha***********************************************************************************************************/
+.slider { width:170px; height:auto; float:right; background-color:#f4f4f4; margin:8px 7px 0px 0px}
+.slider2 { width:170px; height:306px; float:right; background-color:#06C; margin:8px 7px 10px 0px;}
+.slider3 { width:170px; height:306px; float:right; background-color:#06C; margin:8px 25px 10px 0px;}
+
+/******************Agregados****************************************************************************************************************************/
+h1{ font-weight:bold; font-size:18px; font-family:"Times New Roman", Times, serif; color:#003366;}
+/****************************************************************************************************************************************************/
+
+/****************formulario**************************************/
+
+/*css formulario*/
+.cambio-password fieldset{
+ margin:10px 0px 0px 0px; padding:0px 0px 10px 5px; font-size:12px; font-family: "Times New Roman", Times, serif;}
+.cambio-password fieldset br{clear:both;}
+.cambio-password label {float:left; width:115px; min-width:115px; padding:3px 0 2px 0; margin:0 10px 15px 0; text-align:right; font-weight:bold; color:#5a5a5a; font-size:12px;}
+.cambio-password fieldset {border:none;}
+.cambio-password fieldset input {margin:0px; padding:5px 5px; border:1px solid #b0c2c8; font-family:Arial, Helvetica, sans-serif; font-size:12px; width:220px; min-width:220px;}
+.cambio-password fieldset .text-area {margin:0px 0px 10px 0px; padding:5px 5px; border:1px solid #b0c2c8; font-family:Arial, Helvetica, sans-serif; font-size:12px; width:220px; min-width:220px; height:60px; min-height:60px;}
+#formulario {width:400px;float:left;}
+#datos_form{ float:right; width:300px; height:200px; margin-right:100px; padding:20px; font-family:georgia; font-size:12px; color:#666}
+.altura{ height:450px}
+.altura2{ height:800px}
+
+/****************************************************************************************************************************************************************************/
+
+/**********grilla_descarga****************************************************************************************************************************************************/
+
+#container {width:500px; margin:auto; margin-top:30px}
+#cajas_descargas_doc {background-color:#f7f7f7; border:#EFEFEF solid 1px; color:#333333; font-family:tahoma; font-size:12px; height:28px; line-height:25px; padding-left:15px; padding-top:5px}
+#cajas_descargas_pdf {background-color:#f7f7f7; border:#EFEFEF solid 1px; color:#333333; font-family:tahoma; font-size:12px; height:28px; line-height:25px; padding-left:15px; padding-top:5px}
+#cajas_descargas_zip {background-color:#f7f7f7; border:#EFEFEF solid 1px; color:#333333; font-family:tahoma; font-size:12px; height:28px; line-height:25px; padding-left:15px; padding-top:5px}
+a.descarga:link, a.descarga:visited { font-family:Tahoma; font-size:12px; color:#333; text-decoration:none}
+a.descarga:hover { font-family:Tahoma; font-size:12px; color:#333; text-decoration:underline}
+#cajas_textos_descarga{width:380px; float:right; margin-right:8px}
+.caja_btn_mas {width:30px; float:right; margin-right:28px; margin-top:5px}
+
+/*************************div titulo secciones***********************************************************************************************************************************/
+.indicativo_secciones{ margin:7px 0px 7px 5px; height:auto; word-wrap: break-word;width:550px; color:#003366}
+a.link_secciones_tit:link, a.link_secciones_tit:visited { color:#003366; text-decoration:none; font-weight:bold}
+a.link_secciones_tit:hover { color:#003366; text-decoration:underline; font-weight:bold}
+
+.titulo_secciones { margin-left:5px; height:auto; word-wrap: break-word; font-family:"Times New Roman", Times, serif; font-size:23px; font-weight:bold; display:table; color:#003366; width:550px}
+
+.contenido_secciones { margin-left:5px; height:auto; word-wrap:break-word; display:table; width:550px; margin-top:10px; margin-bottom:20px}
+
+/***********************video secciones*****************************************************************************************************************************/
+
+.contenido_video { margin-left:5px; height:auto; word-wrap:break-word; display:table; width:550px; margin-top:10px; margin-bottom:20px; text-align:center}
+
+
+/**************paginador**************************/
+
+.numeros { color:#003366 !important; font-weight:bold;}
+#paginator { float:right; font-family:tahoma; font-size:12px; margin-right:15px; margin-top:10px; width:85px;}

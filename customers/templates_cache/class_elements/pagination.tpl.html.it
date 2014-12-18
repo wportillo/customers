@@ -1,0 +1,10 @@
+a:4:{s:6:"blocks";a:5:{s:10:"__global__";s:16:"{__pagination__}";s:10:"pagination";s:213:"<div class="pagination">
+<span class="text_pagination">
+{__previous__}
+{__following__}
+</span>
+{__records__}
+<span class="text_pagination" style="margin-left: 8px;">Cantidad Total: ({amount_results})</span>
+</div>";s:8:"previous";s:136:"<a href="/{previous_direction}/{back}" title="Previous Page"><img src="/resources/images/izq_flecha.gif" border="0"/></a> Pagina: {page}";s:9:"following";s:136:"de {page} Paginas <a href="/{following_direction}/{next}" title="Next Page"><img src="/resources/images/der_flecha.gif" border="0"/></a>";s:7:"records";s:285:"<span class="text_pagination"> Pagina: </span>
+<input name="go_to[]" class="text-input minim-input" style="width: 28px !important;"/>
+<input class="button" type="button" value="Ir a"  onclick="javascript:document.sent_grid.submit();" style="width: 32px !important;margin-left: 10px;"/>";}s:9:"variables";a:5:{s:10:"__global__";a:1:{s:14:"__pagination__";b:1;}s:10:"pagination";a:4:{s:12:"__previous__";b:1;s:13:"__following__";b:1;s:11:"__records__";b:1;s:14:"amount_results";b:1;}s:8:"previous";a:3:{s:18:"previous_direction";b:1;s:4:"back";b:1;s:4:"page";b:1;}s:9:"following";a:3:{s:4:"page";b:1;s:19:"following_direction";b:1;s:4:"next";b:1;}s:7:"records";a:0:{}}s:8:"children";a:5:{s:10:"__global__";a:1:{s:10:"pagination";b:1;}s:10:"pagination";a:3:{s:8:"previous";b:1;s:9:"following";b:1;s:7:"records";b:1;}s:8:"previous";a:0:{}s:9:"following";a:0:{}s:7:"records";a:0:{}}s:9:"functions";a:5:{s:10:"__global__";a:0:{}s:10:"pagination";a:0:{}s:8:"previous";a:0:{}s:9:"following";a:0:{}s:7:"records";a:0:{}}}

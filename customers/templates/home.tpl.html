@@ -1,0 +1,146 @@
+<!-- BEGIN home -->
+<div class="content-box"><!-- Start Content Box -->
+			
+				<div class="content-box-header">
+					
+				<h3>Inicio</h3>
+					
+				</div> <!-- End .content-box-header -->
+				
+				<div class="content-box-content">
+				
+			<!-- BEGIN adminblock -->
+				<div class="content-box column-left">
+				
+				<div class="content-box-header">
+					
+				<h3 style="cursor: s-resize;">Resumen total</h3>
+					
+				</div> 
+				
+				<div class="content-box-content" style="display: block;">
+					
+					<div class="tab-content default-tab" style="display: block;">
+					
+						 <h4> ------------------------------ Cuentas ------------------------------- </h4>
+					
+					   	<h4> <div>Premium Nuevos x <span style="color:#368B38">{premium_account}</span></div><div>Gratis Nuevos x <span style="color:#368B38">{free_account} </span></div></h4>
+					   
+					   	<h4>  <div>Premium Activos x <span style="color:#368B38">{premium_active}</span> </div>  <div>Gratis Activos x <span style="color:#368B38">{free_active}</span></div></h4>
+					   
+					  	 <h4> <div>Premium Inactivos x <span style="color:#8E0C26">{premium_inactive}</span> </div> <div>Gratis Inactivos x <span style="color:#8E0C26">{free_inactive}</span></div> </h4>
+						
+					</div>    
+					
+				</div> 
+				
+			</div>
+			
+			<!-- END adminblock -->
+			
+			<!-- BEGIN dayblock -->
+				<div class="content-box column-left">
+				
+				<div class="content-box-header">
+					
+				<h3 style="cursor: s-resize;">Resumen Del Día</h3>
+					
+				</div> 
+				
+				<div class="content-box-content" style="display: block;">
+					
+					<div class="tab-content default-tab" style="display: block;">
+					
+						<h4> --------------------- Transacciones ------------------------- </h4>
+					   
+					 	<h4>Cantidad x<span style="color:#368B38"> {transcount}</span></h4>
+					  
+					   <h4><div> Recargas <span style="color:#368B38">${customer_sales}</span></div> <div> Ventas <span style="color:#368B38">${customer_recharge}</span></div></h4>
+						<br/>
+						<h4>Total <span style="color:#368B38"> ${total_sales}</span></h4>
+						
+						<br/>
+						 <h4> ------------------------- Comisión ---------------------------</h4>
+					   
+					      <h4><div> Recargas <span style="color:#368B38">${commission_sales}</span></div> <div>  Ventas <span style="color:#368B38">${commission_recharge}</span></div></h4>
+						<br/>
+						<h4>Total <span style="color:#368B38"> ${total_commission}</span></h4>
+					</div>    
+					
+				</div> 
+				
+			</div>
+			<!-- END dayblock -->
+			
+			<!-- BEGIN monthblock -->
+			<div class="content-box column-right">
+				
+				<div class="content-box-header">
+					
+					<h3 style="cursor: s-resize;">Resumen del mes</h3>
+					
+				</div> <!-- End .content-box-header -->
+				
+				<div class="content-box-content" style="display: block;">
+					
+					<div class="tab-content default-tab" style="display: block;">
+					 
+					 
+					   <h4> ------------------------------ Cuentas ------------------------------- </h4>
+					
+					   <h4> <div>Premium x <span style="color:#368B38">{new_customer}</span></div><div>Gratis Nuevos x <span style="color:#368B38">{new_customer_free} </span></div></h4>
+					   
+					   <h4>  <div>Premium Activos x <span style="color:#368B38">{premium_active}</span> </div>  <div>Gratis Activos x <span style="color:#368B38">{free_active}</span></div></h4>
+					   
+					   <h4> <div>Premium Inactivos x <span style="color:#8E0C26">{premium_inactive}</span> </div> <div>Gratis Inactivos x <span style="color:#8E0C26">{free_inactive}</span></div> </h4>
+					   
+					  <br/>
+					  <br/><br/>
+					   <h4> --------------------- Transacciones ------------------------ </h4>
+					   
+					 	<h4>Cantidad x<span style="color:#368B38"> {transcount}</span></h4>
+					  
+					   <h4><div> Recargas <span style="color:#368B38">${customer_recharge}</span></div> <div> Ventas <span style="color:#368B38">${customer_sales}</span></div></h4>
+						<br/>
+						<h4>Total <span style="color:#368B38"> ${total_sales}</span></h4>
+						
+						<br/>
+						<!-- BEGIN commission -->
+					   <h4> ----------------------- Comisión -------------------------</h4>
+					   
+					      <h4><div> Recargas <span style="color:#368B38">${commission_sales}</span></div> <div>  Ventas <span style="color:#368B38">${commission_recharge}</span></div></h4>
+						<br/>
+						<h4>Total <span style="color:#368B38"> ${total_commission}</span></h4>
+						
+						<!-- END commission -->
+					</div> <!-- End #tab3 -->        
+					
+				</div> <!-- End .content-box-content -->
+				
+			</div>	
+			<!-- END monthblock -->
+				<div class="tab-content default-tab" id="tab2">
+			
+				<!-- main Bar -->
+					{main_bar}
+				<!-- main Bar -->
+
+				<!-- notification -->
+					{notification_event}
+				<!-- notification -->
+			
+						<form method="post" name="sent" id="sent" autocomplete="off">
+							<fieldset class="column"> <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
+									{menu_home}
+							</fieldset>
+							
+							<div class="clear"></div><!-- End .clear -->
+							
+						</form>
+						
+					</div> <!-- End #tab2 -->        
+				
+				</div> <!-- End .content-box-content -->
+				
+			</div> <!-- End .content-box -->
+<!-- END home -->

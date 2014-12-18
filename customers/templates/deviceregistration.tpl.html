@@ -1,0 +1,99 @@
+<!-- BEGIN deviceregistration -->
+<div class="content-box">
+<!-- Start Content Box -->
+				
+				<div class="content-box-header">
+					
+				<h3>{page_title}</h3>
+					
+				<div class="clear"></div>
+				</div> 
+				<!-- End .content-box-header -->
+				
+				<div class="content-box-content">
+				
+				<form method="post" name="sent_grid" id="sent_grid" autocomplete="off">
+				
+				<input type="hidden" value="1" name="send_form">
+					
+					<div class="tab-content default-tab" id="tab1"> <!-- This is the target div. id must match the href of this div's tab -->
+						
+								<!-- main Bar -->
+									{main_bar}
+								<!-- main Bar -->
+				
+								<!-- notification -->
+									{notification_event}
+								<!-- notification -->
+							
+								  <table id="pagination">
+									<thead>
+										<tr>
+											<td colspan="3">
+												{quantity_dropmenu}
+											</td>
+											<td colspan="3">
+												{pagination}
+											</td>
+										</tr>
+										</thead>
+									</table>
+								<!-- Filters -->
+									<!-- BEGIN adddevice -->
+									<table id="filters1">
+											<thead>
+												<tr>
+													<td>	
+														<input class="button" type="button" value="Agregar Dispositivo"  onclick="javascript:document.location.href='/device';"/>
+													</td>
+												</tr>
+											</thead>
+									</table>
+									<!-- END adddevice -->		
+							<table id="grid">
+								<thead>
+									<tr>
+								   		{i_serial_order_by}
+										{type_order_by}
+										{last_update_order_by}
+										<th>Acciones</th>
+									</tr>
+							</thead>
+						 	<tbody>
+								<!-- BEGIN list -->
+										<tr>
+											<td>
+										     {i_serial}
+											</td>
+											<td>
+											{type}
+											</td>
+											<td>
+											{last_update}
+											</td>
+											<!-- actions -->	
+											 <td>
+												<!-- Icons -->
+													{edit_edit}
+													{delete_delete}
+											 </td>
+											<!-- actions -->
+										</tr>
+								<!-- END list -->
+							
+								<!-- BEGIN norecords -->
+									<tr>
+										<td colspan="4">Esta busqueda no produjo resultados</td>
+									</tr>
+								<!-- END norecords -->
+								</tbody>
+								
+						</table>
+						
+					</div> <!-- End #tab1 -->
+						{pagination}
+				</form>
+				</div> <!-- End .content-box-content -->
+				
+			</div> <!-- End .content-box -->
+<!-- END deviceregistration -->

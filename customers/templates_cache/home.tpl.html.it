@@ -1,0 +1,78 @@
+a:4:{s:6:"blocks";a:6:{s:10:"__global__";s:10:"{__home__}";s:4:"home";s:747:"<div class="content-box"><!-- Start Content Box -->
+<div class="content-box-header">
+<h3>Inicio</h3>
+</div> <!-- End .content-box-header -->
+<div class="content-box-content">
+{__adminblock__}
+{__dayblock__}
+{__monthblock__}
+<div class="tab-content default-tab" id="tab2">
+<!-- main Bar -->
+{main_bar}
+<!-- main Bar -->
+<!-- notification -->
+{notification_event}
+<!-- notification -->
+<form method="post" name="sent" id="sent" autocomplete="off">
+<fieldset class="column"> <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
+{menu_home}
+</fieldset>
+<div class="clear"></div><!-- End .clear -->
+</form>
+</div> <!-- End #tab2 -->
+</div> <!-- End .content-box-content -->
+</div> <!-- End .content-box -->";s:10:"adminblock";s:866:"<div class="content-box column-left">
+<div class="content-box-header">
+<h3 style="cursor: s-resize;">Resumen total</h3>
+</div>
+<div class="content-box-content" style="display: block;">
+<div class="tab-content default-tab" style="display: block;">
+<h4> ------------------------------ Cuentas ------------------------------- </h4>
+<h4> <div>Premium Nuevos x <span style="color:#368B38">{premium_account}</span></div><div>Gratis Nuevos x <span style="color:#368B38">{free_account} </span></div></h4>
+<h4>  <div>Premium Activos x <span style="color:#368B38">{premium_active}</span> </div>  <div>Gratis Activos x <span style="color:#368B38">{free_active}</span></div></h4>
+<h4> <div>Premium Inactivos x <span style="color:#8E0C26">{premium_inactive}</span> </div> <div>Gratis Inactivos x <span style="color:#8E0C26">{free_inactive}</span></div> </h4>
+</div>
+</div>
+</div>";s:8:"dayblock";s:961:"<div class="content-box column-left">
+<div class="content-box-header">
+<h3 style="cursor: s-resize;">Resumen Del Día</h3>
+</div>
+<div class="content-box-content" style="display: block;">
+<div class="tab-content default-tab" style="display: block;">
+<h4> --------------------- Transacciones ------------------------- </h4>
+<h4>Cantidad x<span style="color:#368B38"> {transcount}</span></h4>
+<h4><div> Recargas <span style="color:#368B38">${customer_sales}</span></div> <div> Ventas <span style="color:#368B38">${customer_recharge}</span></div></h4>
+<br/>
+<h4>Total <span style="color:#368B38"> ${total_sales}</span></h4>
+<br/>
+<h4> ------------------------- Comisión ---------------------------</h4>
+<h4><div> Recargas <span style="color:#368B38">${commission_sales}</span></div> <div>  Ventas <span style="color:#368B38">${commission_recharge}</span></div></h4>
+<br/>
+<h4>Total <span style="color:#368B38"> ${total_commission}</span></h4>
+</div>
+</div>
+</div>";s:10:"monthblock";s:1360:"<div class="content-box column-right">
+<div class="content-box-header">
+<h3 style="cursor: s-resize;">Resumen del mes</h3>
+</div> <!-- End .content-box-header -->
+<div class="content-box-content" style="display: block;">
+<div class="tab-content default-tab" style="display: block;">
+<h4> ------------------------------ Cuentas ------------------------------- </h4>
+<h4> <div>Premium x <span style="color:#368B38">{new_customer}</span></div><div>Gratis Nuevos x <span style="color:#368B38">{new_customer_free} </span></div></h4>
+<h4>  <div>Premium Activos x <span style="color:#368B38">{premium_active}</span> </div>  <div>Gratis Activos x <span style="color:#368B38">{free_active}</span></div></h4>
+<h4> <div>Premium Inactivos x <span style="color:#8E0C26">{premium_inactive}</span> </div> <div>Gratis Inactivos x <span style="color:#8E0C26">{free_inactive}</span></div> </h4>
+<br/>
+<br/><br/>
+<h4> --------------------- Transacciones ------------------------ </h4>
+<h4>Cantidad x<span style="color:#368B38"> {transcount}</span></h4>
+<h4><div> Recargas <span style="color:#368B38">${customer_recharge}</span></div> <div> Ventas <span style="color:#368B38">${customer_sales}</span></div></h4>
+<br/>
+<h4>Total <span style="color:#368B38"> ${total_sales}</span></h4>
+<br/>
+{__commission__}
+</div> <!-- End #tab3 -->
+</div> <!-- End .content-box-content -->
+</div>";s:10:"commission";s:309:"<h4> ----------------------- Comisión -------------------------</h4>
+<h4><div> Recargas <span style="color:#368B38">${commission_sales}</span></div> <div>  Ventas <span style="color:#368B38">${commission_recharge}</span></div></h4>
+<br/>
+<h4>Total <span style="color:#368B38"> ${total_commission}</span></h4>";}s:9:"variables";a:6:{s:10:"__global__";a:1:{s:8:"__home__";b:1;}s:4:"home";a:6:{s:14:"__adminblock__";b:1;s:12:"__dayblock__";b:1;s:14:"__monthblock__";b:1;s:8:"main_bar";b:1;s:18:"notification_event";b:1;s:9:"menu_home";b:1;}s:10:"adminblock";a:6:{s:15:"premium_account";b:1;s:12:"free_account";b:1;s:14:"premium_active";b:1;s:11:"free_active";b:1;s:16:"premium_inactive";b:1;s:13:"free_inactive";b:1;}s:8:"dayblock";a:7:{s:10:"transcount";b:1;s:14:"customer_sales";b:1;s:17:"customer_recharge";b:1;s:11:"total_sales";b:1;s:16:"commission_sales";b:1;s:19:"commission_recharge";b:1;s:16:"total_commission";b:1;}s:10:"monthblock";a:11:{s:12:"new_customer";b:1;s:17:"new_customer_free";b:1;s:14:"premium_active";b:1;s:11:"free_active";b:1;s:16:"premium_inactive";b:1;s:13:"free_inactive";b:1;s:10:"transcount";b:1;s:17:"customer_recharge";b:1;s:14:"customer_sales";b:1;s:11:"total_sales";b:1;s:14:"__commission__";b:1;}s:10:"commission";a:3:{s:16:"commission_sales";b:1;s:19:"commission_recharge";b:1;s:16:"total_commission";b:1;}}s:8:"children";a:6:{s:10:"__global__";a:1:{s:4:"home";b:1;}s:4:"home";a:3:{s:10:"adminblock";b:1;s:8:"dayblock";b:1;s:10:"monthblock";b:1;}s:10:"adminblock";a:0:{}s:8:"dayblock";a:0:{}s:10:"monthblock";a:1:{s:10:"commission";b:1;}s:10:"commission";a:0:{}}s:9:"functions";a:6:{s:10:"__global__";a:0:{}s:4:"home";a:0:{}s:10:"adminblock";a:0:{}s:8:"dayblock";a:0:{}s:10:"monthblock";a:0:{}s:10:"commission";a:0:{}}}

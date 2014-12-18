@@ -1,0 +1,39 @@
+a:4:{s:6:"blocks";a:2:{s:10:"__global__";s:13:"{__product__}";s:7:"product";s:1227:"<div class="content-box"><!-- Start Content Box -->
+<div class="content-box-header">
+<h3>{title}</h3>
+</div> <!-- End .content-box-header -->
+<div class="content-box-content">
+<div class="tab-content default-tab" id="tab2">
+<!-- main Bar -->
+{main_bar}
+<!-- main Bar -->
+<!-- notification -->
+{notification_event}
+<!-- notification -->
+<form method="post" name="sent" id="sent" autocomplete="off">
+<fieldset class="column-left"> <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
+<input type="hidden" name="sent_form" value="1" id="sent_form"/>
+{key_product_input}
+{name_product_input}
+{amount_input}
+{subscription_input}
+{shipping_dropmenu}
+</fieldset>
+<fieldset class="column-right">
+{cycle_dropmenu}
+{device_dropmenu}
+{description_product_pt_textarea}
+{description_product_es_textarea}
+{active_radio}
+<br/>
+<br/>
+<p>
+<input class="button" type="button" value="Guardar" onclick="document.sent.submit();"/>
+<input class="button" type="button" value="Cancelar" onclick="document.location.href='/products/';"/>
+</p>
+</fieldset>
+<div class="clear"></div><!-- End .clear -->
+</form>
+</div> <!-- End #tab2 -->
+</div> <!-- End .content-box-content -->
+</div> <!-- End .content-box -->";}s:9:"variables";a:2:{s:10:"__global__";a:1:{s:11:"__product__";b:1;}s:7:"product";a:13:{s:5:"title";b:1;s:8:"main_bar";b:1;s:18:"notification_event";b:1;s:17:"key_product_input";b:1;s:18:"name_product_input";b:1;s:12:"amount_input";b:1;s:18:"subscription_input";b:1;s:17:"shipping_dropmenu";b:1;s:14:"cycle_dropmenu";b:1;s:15:"device_dropmenu";b:1;s:31:"description_product_pt_textarea";b:1;s:31:"description_product_es_textarea";b:1;s:12:"active_radio";b:1;}}s:8:"children";a:2:{s:10:"__global__";a:1:{s:7:"product";b:1;}s:7:"product";a:0:{}}s:9:"functions";a:2:{s:10:"__global__";a:0:{}s:7:"product";a:0:{}}}
